@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bx6qfllj8ngxi"]
+
+[ext_resource type="Script" path="res://assets/scripts/tiago.gd" id="1_2gp3h"]
+[ext_resource type="SpriteFrames" uid="uid://dse5vg6k2yqqq" path="res://assets/resources/player.tres" id="2_v044b"]
+
+[node name="Tiago" type="CharacterBody2D"]
+script = ExtResource("1_2gp3h")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_v044b")
+animation = &"Idle_down"
+autoplay = "Idle_down"
+
+[node name="ColisionBox" type="CollisionShape2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]

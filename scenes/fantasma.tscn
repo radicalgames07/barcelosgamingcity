@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://bc1xu0qi7crc2"]
+
+[ext_resource type="Script" path="res://assets/scripts/fantasma.gd" id="1_dhgo2"]
+[ext_resource type="SpriteFrames" uid="uid://c024lyw24novv" path="res://assets/resources/fantasma.tres" id="1_vum6r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7tvb1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6bv7r"]
+size = Vector2(32, 32)
+
+[node name="fantasma" type="StaticBody2D"]
+script = ExtResource("1_dhgo2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+sprite_frames = ExtResource("1_vum6r")
+frame_progress = 0.209682
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -12)
+shape = SubResource("RectangleShape2D_7tvb1")
+disabled = true
+
+[node name="Dialogue_Box" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dialogue_Box"]
+position = Vector2(0, -12)
+shape = SubResource("RectangleShape2D_6bv7r")
+
+[connection signal="area_entered" from="Dialogue_Box" to="." method="_on_dialogue_box_area_entered"]
+[connection signal="area_exited" from="Dialogue_Box" to="." method="_on_dialogue_box_area_exited"]

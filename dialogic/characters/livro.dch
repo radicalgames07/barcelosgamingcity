@@ -1,0 +1,67 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"mirror": false,
+&"display_name": "livro",
+&"nicknames": [""],
+&"default_portrait": "livro_1",
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+&"_translation_id": "",
+&"portraits": {
+"livro_1": {
+"export_overrides": {
+"image": "\"res://assets/sprites/Book1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"livro_2": {
+"export_overrides": {
+"image": "\"res://assets/sprites/Book2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"livro_3": {
+"export_overrides": {
+"image": "\"res://assets/sprites/Book3.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"livro_4": {
+"export_overrides": {
+"image": "\"res://assets/sprites/Book4.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"livro_5": {
+"export_overrides": {
+"image": "\"res://assets/sprites/Book5.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"description": "",
+&"color": Color(1, 1, 1, 1),
+&"scale": 1.0,
+&"offset": Vector2(0, 0)
+}

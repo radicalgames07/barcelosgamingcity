@@ -1,0 +1,21 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"mirror": false,
+&"display_name": "mestre",
+&"nicknames": [""],
+&"default_portrait": "",
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+&"_translation_id": "",
+&"portraits": {},
+&"description": "",
+&"color": Color(1, 1, 1, 1),
+&"scale": 1.0,
+&"offset": Vector2(0, 0)
+}

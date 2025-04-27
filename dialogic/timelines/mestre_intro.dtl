@@ -1,0 +1,20 @@
+[style name="vn_style"]
+join mestre_ch left
+mestre_ch: Olá tiago
+mestre_ch: Como estás?
+- Estou bem
+	mestre_ch: Ainda bem..
+	mestre_ch: Queria pedir-te se me podias fazer um favor . .
+	mestre_ch: Encomendaram-me uma peça de um galo, mas a minha referencia despedaçou-se . .
+	mestre_ch: Podes encontrar os pedaços
+	- Sem Problema !
+		mestre_ch: Obrigado! Ajudas-me imenso !
+		mestre_ch: Leva aqui um mapa,
+		mestre_ch: Deve mostrar onde encontrar os pedaços
+		mestre_ch: Obrigado pela a ajuda ! Fica Bem !!
+	- Tou ocupado não consigo
+		mestre_ch: Uma pena vou pedir ao Dinis
+- Estou mal
+	mestre_ch: É melhor descansares um bocado . .
+	mestre_ch: Podes entrar relaxa um pouco
+[end_timeline]

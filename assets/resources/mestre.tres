@@ -1,0 +1,53 @@
+[gd_resource type="SpriteFrames" load_steps=8 format=3 uid="uid://cgje5i8n62nlm"]
+
+[ext_resource type="Texture2D" uid="uid://cj00gg54ti08i" path="res://assets/characters/mestre_tileset.png" id="1_kpknf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mjnxm"]
+atlas = ExtResource("1_kpknf")
+region = Rect2(0, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jweue"]
+atlas = ExtResource("1_kpknf")
+region = Rect2(16, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jhmd7"]
+atlas = ExtResource("1_kpknf")
+region = Rect2(32, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iejgr"]
+atlas = ExtResource("1_kpknf")
+region = Rect2(48, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xaox7"]
+atlas = ExtResource("1_kpknf")
+region = Rect2(64, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tct86"]
+atlas = ExtResource("1_kpknf")
+region = Rect2(80, 32, 16, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mjnxm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jweue")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jhmd7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iejgr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xaox7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tct86")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

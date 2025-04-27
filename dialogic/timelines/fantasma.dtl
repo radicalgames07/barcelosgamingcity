@@ -1,0 +1,41 @@
+[style name="vn_style"]
+fantasma: Ok vamos ver a primeira pergunta.
+fantasma: Onde fica Barcelos?
+- Sul de Portugal
+	fantasma: Parece que te escapou um detalhe importante. Volta a ler com atenção!
+- Norte de Portugal
+	fantasma: Muito bem próxima pergunta.
+	fantasma: O que simboliza o Galo de Barcelos?
+	- Um castigo para o culpado
+		fantasma: Resposta errada! Tenta novamente depois de revisares o que leste.
+	- Um símbolo de guerra
+		fantasma: Resposta errada! Tenta novamente depois de revisares o que leste.
+	- Um milagre que provou a inocência
+		fantasma: Assim Mesmo! Próxima.\
+		fantasma\: Em que dia acontece a Feira de Barcelos?
+		- Ao domingo
+			fantasma: Hmm... não é bem isso. Presta mais atenção aos livros, talvez encontres a resposta certa!
+		- À segunda-feira
+			fantasma: Hmm... não é bem isso. Presta mais atenção aos livros, talvez encontres a resposta certa!
+		- À quinta-feira
+			fantasma: Quase a acabar.
+			fantasma: Qual é o material mais usado no artesanato de Barcelos?
+			- Barro
+				fantasma: Ultima Pergunta.
+				fantasma: Qual destes é um monumento importante em Barcelos?
+				- Castelo de Guimarães
+					fantasma: Quase lá! Mas não é essa a resposta certa. Volta a conferir os detalhes, estou certo de que vais encontrar a resposta correta.
+				- Paço dos Condes
+					fantasma: Acertas-te todas.
+					fantasma: Agradeço por me entreteres.
+					Aqui tens o pedaço do galo.
+					join galo2 center
+					[signal arg="galo1"]
+				- Torre de Belém
+					fantasma: Quase lá! Mas não é essa a resposta certa. Volta a conferir os detalhes, estou certo de que vais encontrar a resposta correta.
+			- Madeira
+				fantasma: Hmm, acho que te enganaste. Que tal dar mais uma olhada nos livros? A resposta está por lá!
+			- Vidro
+				fantasma: Hmm, acho que te enganaste. Que tal dar mais uma olhada nos livros? A resposta está por lá!
+- Centro de Portugal
+	fantasma: Parece que te escapou um detalhe importante. Volta a ler com atenção!

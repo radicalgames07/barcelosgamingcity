@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://bx6qfllj8ngxi"]
+
+[ext_resource type="Script" path="res://assets/scripts/tiago.gd" id="1_2gp3h"]
+[ext_resource type="SpriteFrames" uid="uid://dse5vg6k2yqqq" path="res://assets/resources/player.tres" id="2_v044b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4rr80"]
+size = Vector2(15.5, 15.5)
+
+[node name="Tiago" type="CharacterBody2D"]
+y_sort_enabled = true
+script = ExtResource("1_2gp3h")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+sprite_frames = ExtResource("2_v044b")
+animation = &"Idle_Left"
+autoplay = "Idle_down"
+frame_progress = 0.445235
+
+[node name="ColisionBox" type="CollisionShape2D" parent="."]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_4rr80")
+
+[node name="Hitbox" type="Area2D" parent="."]
+position = Vector2(0, -16)
+collision_layer = 12
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(0, 8)
+shape = SubResource("RectangleShape2D_4rr80")

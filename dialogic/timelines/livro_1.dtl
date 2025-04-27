@@ -1,0 +1,4 @@
+join livro (livro_1) center
+[wait_input]
+leave livro
+[end_timeline]

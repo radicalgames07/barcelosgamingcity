@@ -1,0 +1,53 @@
+[gd_resource type="SpriteFrames" load_steps=8 format=3 uid="uid://c024lyw24novv"]
+
+[ext_resource type="Texture2D" uid="uid://cm6fai08hxooo" path="res://assets/characters/fantasma.png" id="1_wmcxw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_blfqx"]
+atlas = ExtResource("1_wmcxw")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_im73k"]
+atlas = ExtResource("1_wmcxw")
+region = Rect2(16, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5tcai"]
+atlas = ExtResource("1_wmcxw")
+region = Rect2(32, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jancv"]
+atlas = ExtResource("1_wmcxw")
+region = Rect2(48, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lvla6"]
+atlas = ExtResource("1_wmcxw")
+region = Rect2(64, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v03na"]
+atlas = ExtResource("1_wmcxw")
+region = Rect2(80, 0, 16, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_blfqx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_im73k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5tcai")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jancv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lvla6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v03na")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

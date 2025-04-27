@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://mjomowbk42wc"]
+
+[ext_resource type="SpriteFrames" uid="uid://cgje5i8n62nlm" path="res://assets/resources/mestre.tres" id="1_2d8t6"]
+[ext_resource type="Script" path="res://assets/scripts/mestre.gd" id="1_180f0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fgdvu"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6xir0"]
+
+[node name="Mestre" type="StaticBody2D"]
+script = ExtResource("1_180f0")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+sprite_frames = ExtResource("1_2d8t6")
+autoplay = "default"
+frame_progress = 0.446574
+
+[node name="ColisionBox" type="CollisionShape2D" parent="."]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_fgdvu")
+
+[node name="DialogueRange" type="Area2D" parent="."]
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DialogueRange"]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_6xir0")
+
+[connection signal="area_entered" from="DialogueRange" to="." method="_on_dialogue_range_area_entered"]
+[connection signal="area_exited" from="DialogueRange" to="." method="_on_dialogue_range_area_exited"]
