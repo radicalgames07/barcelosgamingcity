@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://cvw1cs83x5mo8"]
+
+[ext_resource type="SpriteFrames" uid="uid://4u3wj6h4amap" path="res://assets/resources/worker.tres" id="1_hiraw"]
+[ext_resource type="Script" path="res://assets/scripts/worker.gd" id="1_rs00m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_got3p"]
+size = Vector2(16, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o83hr"]
+size = Vector2(47, 31)
+
+[node name="Worker" type="StaticBody2D"]
+script = ExtResource("1_rs00m")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+sprite_frames = ExtResource("1_hiraw")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.512481
+
+[node name="ColisionBox" type="CollisionShape2D" parent="."]
+position = Vector2(0, -13)
+shape = SubResource("RectangleShape2D_got3p")
+
+[node name="DialogueBox" type="Area2D" parent="."]
+position = Vector2(0, 9)
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DialogueBox"]
+position = Vector2(-13.5, -24.5)
+shape = SubResource("RectangleShape2D_o83hr")
+
+[connection signal="area_entered" from="DialogueBox" to="." method="_on_dialogue_box_area_entered"]
+[connection signal="area_exited" from="DialogueBox" to="." method="_on_dialogue_box_area_exited"]

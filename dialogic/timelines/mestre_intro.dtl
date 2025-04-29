@@ -1,16 +1,20 @@
 [style name="vn_style"]
 join mestre_ch left
-mestre_ch: Olá tiago
+mestre_ch: Olá.
+mestre_ch: És o tiago?
+mestre_ch: Prazer em te conhecer.
 mestre_ch: Como estás?
 - Estou bem
 	mestre_ch: Ainda bem..
-	mestre_ch: Queria pedir-te se me podias fazer um favor . .
-	mestre_ch: Encomendaram-me uma peça de um galo, mas a minha referencia despedaçou-se . .
-	mestre_ch: Podes encontrar os pedaços
+	mestre_ch: A tua avó já me disse que querias aprender artesanato
+	mestre_ch: Peço desculpas mas agora não consigo.
+	mestre_ch: Perdi umas peças para uma encomenda.
+	mestre_ch: Espera,
+	mestre_ch: Podes encontrar os pedaços, se os trouxeres eu ensino-te hoje.
 	- Sem Problema !
 		mestre_ch: Obrigado! Ajudas-me imenso !
-		mestre_ch: Leva aqui um mapa,
-		mestre_ch: Deve mostrar onde encontrar os pedaços
+		mestre_ch: Uma peça tá com alguem no teatro não sei como foi lá parar.
+		mestre_ch: A outra foi parar á torre mediavel, e tá com um fantasma.
 		mestre_ch: Obrigado pela a ajuda ! Fica Bem !!
 	- Tou ocupado não consigo
 		mestre_ch: Uma pena vou pedir ao Dinis

@@ -1,0 +1,5 @@
+worker: Muito Obrigado
+worker: Aqui está o pedaço
+join galo2 (galo 1) center
+[signal arg="galo2p"]
+[end_timeline]

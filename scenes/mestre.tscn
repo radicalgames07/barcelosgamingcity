@@ -22,7 +22,8 @@ position = Vector2(0, -8)
 shape = SubResource("RectangleShape2D_fgdvu")
 
 [node name="DialogueRange" type="Area2D" parent="."]
-collision_mask = 5
+collision_layer = 0
+collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DialogueRange"]
 position = Vector2(0, -8)

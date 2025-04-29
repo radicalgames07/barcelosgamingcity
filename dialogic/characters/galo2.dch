@@ -1,10 +1,6 @@
 {
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
-&"color": Color(1, 1, 1, 1),
-&"scale": 1.0,
-&"description": "",
-&"offset": Vector2(0, 0),
 &"mirror": false,
 &"display_name": "galo2",
 &"portraits": {
@@ -16,16 +12,38 @@
 "offset": Vector2(0, -125),
 "scale": 0.5,
 "scene": ""
+},
+"galo": {
+"export_overrides": {
+"image": "\"res://assets/sprites/galo.png\""
+},
+"mirror": false,
+"offset": Vector2(0, -75),
+"scale": 0.5,
+"scene": ""
+},
+"galo 1": {
+"export_overrides": {
+"image": "\"res://assets/sprites/galo1.png\""
+},
+"mirror": false,
+"offset": Vector2(0, -100),
+"scale": 0.5,
+"scene": ""
 }
 },
 &"default_portrait": "Galo2",
-&"nicknames": [""],
 &"_translation_id": "",
+&"nicknames": [""],
 &"custom_info": {
 "prefix": "",
 "sound_mood_default": "",
 "sound_moods": {},
 "style": "",
 "suffix": ""
-}
+},
+&"description": "",
+&"color": Color(1, 1, 1, 1),
+&"scale": 1.0,
+&"offset": Vector2(0, 0)
 }

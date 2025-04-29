@@ -1,0 +1,5 @@
+join posters (poster3) center
+Recolheu poster\: A noite
+leave posters
+[signal arg="poster3"]
+[end_timeline]

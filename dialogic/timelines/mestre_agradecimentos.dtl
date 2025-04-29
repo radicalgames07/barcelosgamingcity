@@ -1,0 +1,13 @@
+mestre_ch: Ah, Tiago!
+Já voltaste!
+mestre_ch: Tens o galo?
+- Entregar o galo
+join galo2 (galo 1) center [animation="Fade In Up" wait="true"]
+[wait time="0.5"]
+leave galo2 [animation="Fade Out Up" wait="true"]
+mestre_ch: Ah obrigado tiago.
+mestre_ch: Nem sei o que faria se não fosse pela tua ajuda
+mestre_ch: Mas vamos, tavas a querer aprender a ser artesão.
+Anda para que eu te ensinar.
+[wait time="2.0"]
+[signal arg="fim"]

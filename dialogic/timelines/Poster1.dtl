@@ -1,0 +1,5 @@
+join posters (poster1) center
+Recolheu poster\: O Auto dos Bons Diabos
+leave posters
+[signal arg="poster1"]
+[end_timeline]

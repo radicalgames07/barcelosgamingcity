@@ -3,16 +3,6 @@
 "@subpath": NodePath(""),
 &"mirror": false,
 &"display_name": "livro",
-&"nicknames": [""],
-&"default_portrait": "livro_1",
-&"custom_info": {
-"prefix": "",
-"sound_mood_default": "",
-"sound_moods": {},
-"style": "",
-"suffix": ""
-},
-&"_translation_id": "",
 &"portraits": {
 "livro_1": {
 "export_overrides": {
@@ -59,6 +49,16 @@
 "scale": 1,
 "scene": ""
 }
+},
+&"default_portrait": "livro_1",
+&"_translation_id": "",
+&"nicknames": [""],
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
 },
 &"description": "",
 &"color": Color(1, 1, 1, 1),

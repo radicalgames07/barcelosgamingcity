@@ -1,0 +1,5 @@
+join posters (poster2) center
+Recolheu poster\: Cambedo 1946
+leave posters
+[signal arg="poster2"]
+[end_timeline]

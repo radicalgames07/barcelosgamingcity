@@ -13,8 +13,12 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if galo1 && galo2 && !galo:
 		galo = true	
+		Dialogic.start("galo")
 
 func _on_dialogic_signal(arg: String) -> void:
 	if arg == "galo1":
-		var galo1 = true
-		print("galo1")
+		galo1 = true
+		
+	if arg == "galo2p":
+		galo2 = true
+		

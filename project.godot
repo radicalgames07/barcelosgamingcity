@@ -25,18 +25,28 @@ directories/dch_directory={
 "fantasma": "res://dialogic/characters/fantasma.dch",
 "galo2": "res://dialogic/characters/galo2.dch",
 "livro": "res://dialogic/characters/livro.dch",
-"mestre_ch": "res://dialogic/characters/mestre_ch.dch"
+"mestre_ch": "res://dialogic/characters/mestre_ch.dch",
+"posters": "res://dialogic/characters/posters.dch",
+"worker": "res://dialogic/characters/worker.dch"
 }
 directories/dtl_directory={
+"Poster1": "res://dialogic/timelines/Poster1.dtl",
+"Poster2": "res://dialogic/timelines/Poster2.dtl",
+"Poster3": "res://dialogic/timelines/Poster3.dtl",
 "fantasma": "res://dialogic/timelines/fantasma.dtl",
 "fantasma_intro": "res://dialogic/timelines/fantasma_intro.dtl",
+"galo": "res://dialogic/timelines/galo.dtl",
+"galo2": "res://dialogic/timelines/galo2.dtl",
+"galo2p": "res://dialogic/timelines/galo2p.dtl",
 "livro": "res://dialogic/timelines/livro.dtl",
 "livro_1": "res://dialogic/timelines/livro_1.dtl",
 "livro_2": "res://dialogic/timelines/livro_2.dtl",
 "livro_3": "res://dialogic/timelines/livro_3.dtl",
 "livro_4": "res://dialogic/timelines/livro_4.dtl",
 "livro_5": "res://dialogic/timelines/livro_5.dtl",
-"mestre_intro": "res://dialogic/timelines/mestre_intro.dtl"
+"mestre_agradecimentos": "res://dialogic/timelines/mestre_agradecimentos.dtl",
+"mestre_intro": "res://dialogic/timelines/mestre_intro.dtl",
+"worker": "res://dialogic/timelines/worker.dtl"
 }
 layout/style_list=["res://dialogic/styles/vn_style.tres"]
 layout/default_style="res://dialogic/styles/vn_style.tres"

@@ -9,9 +9,12 @@ var entrou_torre = false
 
 var rua_d_fora = false
 var rua_d_dentro = false
+
+var teatro_fora = false
+var teatro_dentro = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass
+	Dialogic.signal_event.connect(_on_dialogic_signal)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -56,6 +59,18 @@ func _process(delta: float) -> void:
 			$MainCam.position = Vector2(0, 0)
 			$MainCam.zoom = Vector2(1, 1)
 			$Tiago.position = Vector2(275, -36)
+			
+	if teatro_fora:
+		if Input.is_action_just_pressed("move_down"):
+			$MainCam.position = Vector2(0, 485)
+			$MainCam.zoom = Vector2(1.5, 1.5)
+			$Tiago.position = $Teatro_Dentro.position
+	
+	if teatro_dentro:
+		if Input.is_action_just_pressed("move_up"):
+			$MainCam.position = Vector2(0, 0)
+			$MainCam.zoom = Vector2(1, 1)
+			$Tiago.position = $Teatro_Fora.position
 # mestre casa
 func _on_entrada_mestre_area_entered(area: Area2D) -> void:
 	if area.name == "Hitbox":
@@ -112,3 +127,27 @@ func _on_rua_d_saida_area_entered(area: Area2D) -> void:
 func _on_rua_d_saida_area_exited(area: Area2D) -> void:
 	if area.name == "Hitbox":
 		rua_d_dentro = false
+
+#Teatro
+func _on_teatro_fora_area_entered(area: Area2D) -> void:
+	if area.name == "Hitbox":
+		teatro_fora = true	
+
+func _on_teatro_fora_area_exited(area: Area2D) -> void:
+	if area.name == "Hitbox":
+		teatro_fora = false	
+
+
+func _on_teatro_dentro_area_entered(area: Area2D) -> void:
+	if area.name == "Hitbox":
+		teatro_dentro = true	
+
+func _on_teatro_dentro_area_exited(area: Area2D) -> void:
+	if area.name == "Hitbox":
+		teatro_dentro = false	
+
+func _on_dialogic_signal(arg: String):
+	if arg == "fim":
+		$MainCam.position_smoothing_enabled = false
+		$MainCam.position = Vector2(-1055, 0)
+		$MainCam.zoom = Vector2(0, 0)
